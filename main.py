@@ -41,7 +41,6 @@ def mark_done():
             search_index=int(input("Enter the task number that you want to mark as complete: "))-1
             if 0<=search_index<len(todo_list):
                 todo_list[search_index]['Status']='done'
-                removed_task=todo_list.pop(search_index)
                 print(f"Task {todo_list[search_index]['Task']} has been marked as Done.")
             else:
                 print("Invalid Task Number.")
